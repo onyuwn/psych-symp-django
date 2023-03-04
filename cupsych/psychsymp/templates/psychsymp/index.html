@@ -1,13 +1,9 @@
-<div class="main-content w-100 flex flex-col justify-center items-center p-5">
-    <div #jumbotron class="my-5">
-    </div>
-    <div #row1 class="w-full grid grid-cols-3 gap-1 fade my-5" [ngClass]="{'show':isRowInView === true, 'hide':isRowInView === false}">
-
-    </div>
-    <div #image1 class="max-w-md fade my-5" [ngClass]="{'show':isImage1InView === true, 'hide':isImage1InView === false}">
-        <app-image-container></app-image-container>
-    </div>
-    <div #image2 class="max-w-md fade my-5" [ngClass]="{'show':isImage2InView === true, 'hide':isImage2InView === false}">
-        <app-image-container></app-image-container>
-    </div>
-</div>
+{% load tailwind_tags %}
+<head>
+    <title>Django Tailwind</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% tailwind_css %}
+</head>
+<h1 class="text-green-500">pee</h1>

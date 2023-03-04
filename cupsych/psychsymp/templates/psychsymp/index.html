@@ -5,15 +5,39 @@
     <title>2023 Psychedelic Symposium</title>
     {% tailwind_css %}
     </head>
-    <body>
+    <body class="bg-green-100">
         {% include 'psychsymp/_header.html' %}
         <div class="w-full flex flex-col justify-center items-center">
             <div class="big-content bg-green-400 flex justify-between p-20 w-full">
-                <div class="details">
-                    <h1 class="title m-0 text-4xl font-bold text-slate-800 text-left">2023 Psychedelic Symposium</h1>
-                    <h1 class="title m-0 text-4xl text-slate-800 text-left">April 14</h1>
+                <div class="details w-100">
+                    <h1 class="title m-0 text-4xl font-bold text-slate-800 text-left">2023 Cannabis & Psychedelic Symposium</h1>
+                    <div class="secondary-details flex justify-between items-center"><h1 class="title m-0 text-4xl text-slate-800 text-left">Saturday April 14</h1><h1 class="text-4xl text-slate-800">Virtual Conference</h1></div>
                 </div>
-                <a class="rounded-sm drop-shadow-sm bg-indigo-50">Register</a>
+                <div class="mt-8 scale-100 transition duration-500 ease-in-out hover:scale-125">
+                    <a href="#" class="p-5 bg-yellow-300 rounded-md drop-shadow-sm transition duration-500 ease-in-out hover:drop-shadow-lg">Register</a>
+                </div>
+            </div>
+            <div class="w-3/4 sm:w-full grid grid-cols-1 sm:grid-cols-3 gap-1 my-5">
+                <div class="bg-indigo-100 w-100 drop-shadow-sm rounded-lg flex flex-col items-center p-5 mx-2">
+                    <h2 class="text-center p-3 text-green-50 text-2xl font-bold">info</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f0fdf4" class="w-20 h-20">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                    </svg>      
+                </div>
+
+                <div class="bg-indigo-100 w-100 drop-shadow-sm rounded-lg flex flex-col items-center p-5 mx-2">
+                    <h2 class="text-center p-3 text-green-50 text-2xl font-bold">info</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f0fdf4" class="w-20 h-20">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                    </svg>      
+                </div>
+
+                <div class="bg-indigo-100 w-100 drop-shadow-sm rounded-lg flex flex-col items-center p-5 mx-2">
+                    <h2 class="text-center p-3 text-green-50 text-2xl font-bold">info</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f0fdf4" class="w-20 h-20">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                    </svg>      
+                </div>
             </div>
         </div>
     </body>

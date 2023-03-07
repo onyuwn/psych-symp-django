@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
-import mimetypes
+import mimetypes, os
 
 mimetypes.add_type("text/css", ".css", True)
 
@@ -124,7 +124,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = "/psychsymp/static"
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATICFILES_DIRS = (
+   ('pyschsymp', os.path.join(BASE_DIR, 'psychsymp', 'static')),
+   ('theme', os.path.join(BASE_DIR, 'theme', 'static_src')),
+)
+STATICFILES_FINDERS = (
+  'django.contrib.staticfiles.finders.FileSystemFinder',
+  'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
